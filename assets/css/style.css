@@ -1,5 +1,66 @@
 
 
-body {
-    background-color: rgb(33, 15, 114);
+.background-img {
+    border: 10px solid rgb(39, 38, 38);
+    width: 100%;
+    /* background-image: inherit; */
+    background-repeat: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/portfolio-background.png");
+    background-color: rgb(23, 85, 179);
+    
+    padding: 200px;
 }
+
+.asset-img {
+      
+    background-image: url("../img/Asset\ 1.png");
+    border: 10px solid rgb(102, 99, 99);
+    width: 100%;
+    padding: 100px 100px 100px 100px;
+    margin-top: 5px;
+    /* background-image: inherit; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: contain;
+  }
+
+.test-img {
+    background-image: url("../img/Artboard\ 7.png");
+    border: 10px solid red;
+    width: 100%;
+    padding: 200px 100px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @font-face {
+    font-family: 'digital-7';
+    src: url(digital-7-mono.ttf);
+  }
+
+  .navbar {
+      font-family: digital-7;
+    float: right;
+    font-size: 18px;
+    color: white;
+    padding: 50px;
+    background-color: rgb(212, 105, 16);
+    width: 100%;
+  }
+  
+  .navbar h1 {
+      clear: both;
+    float: left;
+    float: inline-start;
+    margin-right: 20px;
+  }
+
+  .navbar a {
+      color: white;
+      text-decoration: none;
+      
+  }
