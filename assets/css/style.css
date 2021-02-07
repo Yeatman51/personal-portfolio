@@ -39,7 +39,7 @@ body {
 
 .my-work-img-1 {
     background-image: url("../imggg/Screenshot_2021-02-06\ CSS\ Cheatsheet.png");
-    border: 10px solid rgb(209, 203, 203);
+    border: 10px solid rgb(202, 100, 16);
     width: 100%;
     padding: 200px 100px;
     border-radius: 15px;
@@ -54,7 +54,7 @@ body {
 
   .my-work-img-2 {
     background-image: url("../imggg/Screenshot_2021-02-06\ Horiseon\ Social\ Solutions.jpg");
-    border: 10px solid rgb(209, 203, 203);
+    border: 10px solid rgb(202, 100, 16);
     width: 100%;
     padding: 200px 100px;
     border-radius: 15px;
@@ -95,6 +95,8 @@ body {
     font-size: 35px;
     color: white;
     display: flex;
+    flex-direction: row;
+    
     justify-content: flex-end;
     text-align: right;
     border-radius: 15px;
@@ -176,7 +178,7 @@ body {
 .about-me-content {
     display: inline;
     background-color: rgb(59, 59, 59);
-    border: 5px solid rgb(59, 59, 59);
+    border: 5px solid rgb(202, 100, 16);
     border-radius: 15px;
     text-align: center;
     font-size: 30px;
