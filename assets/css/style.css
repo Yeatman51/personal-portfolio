@@ -17,14 +17,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/portfolio-background.png");
+    background-image: url("../imggg/portfolio-background.png");
     background-color: rgb(23, 85, 179);
     padding: 4px;
 }
 
 .asset-img {
       
-    background-image: url("../img/Asset\ 1.png");
+    background-image: url("../imggg/Asset\ 1.png");
     border: none;
     width: 100%;
     padding: 70px;
@@ -38,7 +38,7 @@ body {
   }
 
 .my-work-img-1 {
-    background-image: url("../img/Screenshot_2021-02-06\ CSS\ Cheatsheet.png");
+    background-image: url("../imggg/Screenshot_2021-02-06\ CSS\ Cheatsheet.png");
     border: 10px solid rgb(209, 203, 203);
     width: 100%;
     padding: 200px 100px;
@@ -53,7 +53,7 @@ body {
   }
 
   .my-work-img-2 {
-    background-image: url("../img/Screenshot_2021-02-06\ Horiseon\ Social\ Solutions.jpg");
+    background-image: url("../imggg/Screenshot_2021-02-06\ Horiseon\ Social\ Solutions.jpg");
     border: 10px solid rgb(209, 203, 203);
     width: 100%;
     padding: 200px 100px;
@@ -171,6 +171,7 @@ body {
         padding-left: 4px;
         border-bottom: 8px solid white;
     }
+    
 /* Div section for styling */
 .about-me-content {
     display: inline;
