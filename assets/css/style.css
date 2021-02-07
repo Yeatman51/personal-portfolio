@@ -71,7 +71,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 107px;
+  margin-top: 60px;
 }
 
 .pro-pic {
@@ -98,7 +98,7 @@ body {
     justify-content: flex-end;
     text-align: right;
     border-radius: 15px;
-    float: right;
+    
     padding: 8px;
     background-color: rgb(202, 100, 16);
     width: 100%;
@@ -135,7 +135,7 @@ body {
         width: 90%;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
