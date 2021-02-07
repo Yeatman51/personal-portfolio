@@ -37,16 +37,51 @@ body {
     background-position: center;
   }
 
-.test-img {
-    background-image: url("../img/Artboard\ 7.png");
-    border: 10px solid red;
+.my-work-img-1 {
+    background-image: url("../img/Screenshot_2021-02-06\ CSS\ Cheatsheet.png");
+    border: 10px solid rgb(209, 203, 203);
     width: 100%;
     padding: 200px 100px;
-
+    border-radius: 15px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 5px;
   }
+
+  .my-work-img-2 {
+    background-image: url("../img/Screenshot_2021-02-06\ Horiseon\ Social\ Solutions.jpg");
+    border: 10px solid rgb(209, 203, 203);
+    width: 100%;
+    padding: 200px 100px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 5px;
+  }
+
+.cont-pro-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 107px;
+}
+
+.pro-pic {
+  width: 155px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgb(37, 37, 37);
+  
+  
+}
+
 /* Full stack web developer text */
   .big-text {
       text-align: center;
@@ -59,14 +94,17 @@ body {
     font-family: digital-7;
     font-size: 35px;
     color: white;
+    display: flex;
+    justify-content: flex-end;
     text-align: right;
     border-radius: 15px;
     float: right;
-    padding: 5px;
+    padding: 8px;
     background-color: rgb(202, 100, 16);
     width: 100%;
   }
-  
+
+
   .navbar h1 {
     clear: both;
     float: left;
@@ -82,16 +120,44 @@ body {
       padding: 10px;
   }
 
+  .navbar a:hover {
+    background-color: rgb(105, 103, 103);
+    transition: background-color .2s; 
+    border-radius: 15px;
+  }
+
   .row1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 85px;
+        margin-top: 50px;
         margin-bottom: 20px;
     }
+
+    .row2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 70%;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+  }
+
+  .row1 a:hover {
+    cursor: pointer;
+    
+    }
+
+
+
 /* About me, my work, contact me */
     .left-tags {
         display: flex;
@@ -106,15 +172,68 @@ body {
         border-bottom: 8px solid white;
     }
 /* Div section for styling */
-    .content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        display: inline-flex;
+.about-me-content {
+    display: inline;
+    background-color: rgb(59, 59, 59);
+    border: 5px solid rgb(59, 59, 59);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+    padding: 17px;
+    font-family: digital-7;
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+        display: inline;
         background-color: rgb(59, 59, 59);
-        border: 5px solid rgb(59, 59, 59);
+        border: 3px solid rgb(202, 100, 16);
         border-radius: 15px;
         text-align: center;
-        font-size: 18px;
-        padding: 17px;
+        font-size: 30px;
+        padding: 11px;
+        margin: 20px;
+        font-family: digital-7;
+        color: white;
+        text-decoration: none;
     }
+
+.content a {
+  
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: inline-flex;
+  font-family: digital-7;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
